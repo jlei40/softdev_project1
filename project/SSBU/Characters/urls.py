@@ -6,8 +6,9 @@ app_name = "characters"
 
 urlpatterns = [
    path("", views.index, name="index"),
-   # path("cookies", views.cookies, name="cookies"),
-   # path("djangoforms", views.djangoforms, name="djangoforms"),
-   # path("nondjangoforms", views.nondjangoforms, name="nondjangoforms"),   
+   path("cookies", views.cookies, name="cookies"),
+   path("djangoforms", views.djangoforms, name="djangoforms"),
+   path("nondjangoforms", views.nondjangoforms, name="nondjangoforms"),   
+   path("character_info", views.character_info, name="character_info"),
 ]
 
