@@ -1,6 +1,12 @@
 from django.shortcuts import render
-import datetime
 from .Character_forms import CharacterForm
+from django.shortcuts import render, redirect
+from django.contrib import messages
+
+import datetime
+import json
+
+
 
 # Create your views here.
 
@@ -57,15 +63,17 @@ def nondjangoforms(request):
         # process the data
             response = redirect('Characters:character_info')
             print("name", form.cleaned_data['name'])
-            print("actors", form.cleaned_data['actors'])
+            print("characters", form.cleaned_data['Characters'])
             print("year", form.cleaned_data['year'])
             response.set_cookie(key="character_data", value=json.dumps(
-            {'name': request.POST['name'],
-            'actors': request.POST['actors'],
-            'year': request.POST['year']}))
+            {'character_name': request.POST['name'],
+            'characters': request.POST['Characters'],
+            'character_year': request.POST['year']}))
 
 
         return response
     else:
         form = CharacterForm()
     return render(request, "Characters/nondjangoforms.html", {'character_form': form})
+
+
