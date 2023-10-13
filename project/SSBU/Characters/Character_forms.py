@@ -94,5 +94,5 @@ class CharacterForm(forms.Form):
        widget=forms.SelectMultiple,
        choices=Characters,
    )
-   year = forms.IntegerField(required=True)
+   series = forms.IntegerField(required=True)
   

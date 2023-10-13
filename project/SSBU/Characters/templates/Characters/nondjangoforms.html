@@ -1,6 +1,7 @@
 {% extends "base.html" %}
-
+{% load static%}
 {% block content %}
+<br><br><br>
    <form action="" method="post">
        {% csrf_token %}
        {{ character_form }}

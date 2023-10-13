@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-
+{% load static %}
 {% block content %}
    {% comment %} <form >
        <label for="class_text">Grade:</label><br>
@@ -7,13 +7,13 @@
        <label for="hschool_name">High School Name:</label><br>
        <input type="text" id="high_school_name" name="high_school_name"><br>
    </form> {% endcomment %}
-
+   <br><br><br>
    <form action=""  method="post">
     {% csrf_token %}
     <form action="" method="post">
         {% csrf_token %}
-        <label for="character_text">Character Name:</label><br>
-        <input type="text" id="character_name" name="character_name"><br>
+        <label for="character_text">Character Name:</label><br><br>
+        <input type="text" id="character_name" name="character_name"><br><br>
         <label for="series_text">Character Series:</label><br>
         <input type="text" id="character_series" name="character_series"><br>
         <input type="submit" value="Submit">
