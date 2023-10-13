@@ -44,14 +44,14 @@ def character_info(request):
 
 def djangoforms(request):
     if request.method == "POST":
-        if 'character_name' not in request.POST or 'character_year' not in request.POST:
+        if 'character_name' not in request.POST or 'character_series' not in request.POST:
             messages.add_message(request, messages.ERROR, "The form sent is incomplete")
             return render(request, "Characters/forms.html")
 
         response = redirect('Characters:character_info')
         response.set_cookie(key="character_data", value=json.dumps(
             {'character_name': request.POST['character_name'],
-            'character_year': request.POST['character_year']}))
+            'character_series': request.POST['character_series']}))
         return response
     return render(request, "Characters/djangoforms.html")
 
@@ -64,11 +64,11 @@ def nondjangoforms(request):
             response = redirect('Characters:character_info')
             print("name", form.cleaned_data['name'])
             print("characters", form.cleaned_data['Characters'])
-            print("year", form.cleaned_data['year'])
+            print("series", form.cleaned_data['series'])
             response.set_cookie(key="character_data", value=json.dumps(
             {'character_name': request.POST['name'],
             'characters': request.POST['Characters'],
-            'character_year': request.POST['year']}))
+            'character_series': request.POST['series']}))
 
 
         return response
