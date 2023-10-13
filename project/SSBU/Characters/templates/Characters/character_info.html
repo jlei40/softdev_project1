@@ -1,10 +1,5 @@
-{% extends "base.html" %}
-
-{% block content %}
-Character info<br>
-Character name: {{ character_data.character_name }}<br>
-Character year: {{ character_data.character_year }}<br>
-Character: {{character_data.characters}}
-
-
-{% endblock content %}
+{% extends "base.html" %} {% block content %} Character info<br />
+Character name: {{ character_data.character_name }}<br />
+Character year: {{ character_data.character_year }}<br />
+Character: {{character_data.characters}} {% for images in static/images %} {%
+endfor %} {% endblock content %}
