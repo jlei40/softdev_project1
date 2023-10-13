@@ -1,22 +1,29 @@
 {% extends "base.html" %}
 
 {% block content %}
-   {% comment %} <form >
-       <label for="class_text">Grade:</label><br>
-       <input type="text" id="class_grade" name="class_grade"><br>
-       <label for="hschool_name">High School Name:</label><br>
-       <input type="text" id="high_school_name" name="high_school_name"><br>
-   </form> {% endcomment %}
-
-   <form action=""  method="post">
-    {% csrf_token %}
-    <form action="" method="post">
-        {% csrf_token %}
-        <label for="character_text">Character Name:</label><br>
-        <input type="text" id="character_name" name="character_name"><br>
-        <label for="year_text">Character Year:</label><br>
-        <input type="text" id="character_year" name="character_year"><br>
-        <input type="submit" value="Submit">
-        </form>
+   <form action="" method="post">
+       {% csrf_token %}
+       <label for="action">Action:</label>
+       <select name="action" required>
+           <option value="edit">Edit</option>
+           <option value="delete">Delete</option>
+       </select>
+       <br>
+       {{ character_form.Characters.label_tag }}
+       {{ character_form.Characters }}
+       <br>
+       {{ character_form.name.label_tag }}
+       {{ character_form.name }}
+       <br>
+       {{ character_form.height.label_tag }}
+       {{ character_form.height }}
+       <br>
+       {{ character_form.weight.label_tag }}
+       {{ character_form.weight }}
+       <br>
+       {{ character_form.series.label_tag }}
+       {{ character_form.series }}
+       <br>
+       <input type="submit" value="Submit">
+   </form>
 {% endblock content %}
-

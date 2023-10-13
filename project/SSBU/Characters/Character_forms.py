@@ -88,11 +88,11 @@ Characters = [
 ]
 
 class CharacterForm(forms.Form):
-   name = forms.CharField(max_length=100, required=True)
-   Characters = forms.MultipleChoiceField(
-       required=True,
-       widget=forms.SelectMultiple,
-       choices=Characters,
-   )
-   year = forms.IntegerField(required=True)
-  
+    ACTION_CHOICES = [('edit', 'Edit'), ('delete', 'Delete')]
+
+    action = forms.ChoiceField(choices=ACTION_CHOICES, required=True)
+    name = forms.CharField(max_length=100, required=True)
+    Characters = forms.ChoiceField(choices=Characters, required=False)
+    height = forms.CharField(max_length=100, required=True)
+    weight = forms.CharField(max_length=100, required=True)
+    series = forms.CharField(max_length=100, required=True)

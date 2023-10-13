@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Character Search</title>
+</head>
+<body>
+    <h1>Character Search</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="character">Select a Character:</label>
+        <select id="character" name="Characters">
+            {% for character_dict in character_list %}
+                {% for character_name, character_info in character_dict.items %}
+                    <option value="{{ character_name }}">{{ character_name }}</option>
+                {% endfor %}
+            {% endfor %}
+        </select>
+        <button type="submit">Search</button>
+    </form>
+
+    {% if selected_character %}
+        <h2>Character Information:</h2>
+        <p><strong>Name:</strong> {{ selected_character.name }}</p>
+        <p><strong>Height:</strong> {{ selected_character.height }}</p>
+        <p><strong>Weight:</strong> {{ selected_character.weight }}</p>
+        <p><strong>Series:</strong> {{ selected_character.series }}</p>
+    {% endif %}
+</body>
+</html>
