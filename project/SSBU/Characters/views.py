@@ -34,6 +34,7 @@ def cookies(request):
 def character_info(request):
     dico_cookies = request.COOKIES
     dico_context = {}
+    
     if 'character_data' in dico_cookies:
         try:
             dico_character_data = json.loads(dico_cookies['character_data'])
@@ -59,6 +60,7 @@ def djangoforms(request):
 def nondjangoforms(request):
     if request.method == "POST":
         form = CharacterForm(request.POST)
+        import pdb; pdb.set_trace();
         if form.is_valid():
         # process the data
             response = redirect('Characters:character_info')
@@ -73,7 +75,7 @@ def nondjangoforms(request):
 
         return response
     else:
-        form = CharacterForm()
+        form = CharacterForm()    
     return render(request, "Characters/nondjangoforms.html", {'character_form': form})
 
 

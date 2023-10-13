@@ -2,7 +2,7 @@ from django import forms
 
 # When we will have a database, instead of having ("Keanu Reeves", "Keanu Reeves"),
 # we will have (1, "Keanu Reeves") for example with 1 the id of "Keanu Reeves" in the database
-Characters = [
+Characters_list = [
     ("Mario", "Mario"),
     ("Donkey Kong", "Donkey Kong"),
     ("Link", "Link"),
@@ -86,13 +86,53 @@ Characters = [
     ("Pyra/Mythra", "Pyra/Mythra"),
     ("Kazuya Mishima", "Kazuya Mishima")
 ]
-
+series_list = [
+    ("Mario", "Mario"),
+    ("The Legend of Zelda", "The Legend of Zelda"),
+    ("Metroid", "Metroid"),
+    ("Kirby", "Kirby"),
+    ("Star Fox", "Star Fox"),
+    ("Pokemon", "Pokemon"),
+    ("Mother", "Mother"),
+    ("Captain Falcon", "Captain Falcon"),
+    ("Ice Climbers", "Ice Climbers"),
+    ("Fire Emblem", "Fire Emblem"),
+    ("Mr. Game & Watch", "Mr. Game & Watch"),
+    ("Kid Icarus", "Kid Icarus"),
+    ("Metal Gear", "Metal Gear"),
+    ("Sonic the Hedgehog", "Sonic the Hedgehog"),
+    ("Pikmin", "Pikmin"),
+    ("R.O.B.", "R.O.B."),
+    ("Animal Crossing", "Animal Crossing"),
+    ("Mega Man", "Mega Man"),
+    ("Wii Fit Trainer", "Wii Fit Trainer"),
+    ("Little Mac", "Little Mac"),
+    ("Xenoblade", "Xenoblade"),
+    ("Palutena", "Palutena"),
+    ("Pac-Man", "Pac-Man"),
+    ("Duck Hunt", "Duck Hunt"),
+    ("Street Fighter", "Street Fighter"),
+    ("Final Fantasy", "Final Fantasy"),
+    ("Bayonetta", "Bayonetta"),
+    ("Splatoon", "Splatoon"),
+    ("Castlevania", "Castlevania"),
+    ("Persona", "Persona"),
+    ("Dragon Quest", "Dragon Quest"),
+    ("Banjo & Kazooie", "Banjo & Kazooie"),
+    ("Final Fight", "Final Fight"),
+    ("Arms", "Arms"),
+    ("Minecraft", "Minecraft"),
+    ("Tekken", "Tekken"),
+    ("Kingdom Hearts", "Kingdom Hearts"),
+]
 class CharacterForm(forms.Form):
    name = forms.CharField(max_length=100, required=True)
    Characters = forms.MultipleChoiceField(
        required=True,
        widget=forms.SelectMultiple,
-       choices=Characters,
+       choices=Characters_list,
    )
-   series = forms.IntegerField(required=True)
-  
+   series = forms.MultipleChoiceField(
+       required=True,
+       widget=forms.SelectMultiple,
+       choices=series_list)
