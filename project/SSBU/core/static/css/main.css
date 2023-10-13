@@ -5,3 +5,9 @@ main.css is in base.html
   border: 0.5rem;
   border-color: grey;
 }
+
+.teamHighlight{
+  font-size: 2rem;
+  border-color: black;
+  background-color: aqua;
+}
