@@ -88,7 +88,6 @@ Characters = [
 ]
 
 class CharacterForm(forms.Form):
-   name = forms.CharField(max_length=100, required=True)
    Characters = forms.MultipleChoiceField(
        required=True,
        widget=forms.SelectMultiple,

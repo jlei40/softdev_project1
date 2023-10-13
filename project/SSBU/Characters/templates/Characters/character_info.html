@@ -4,7 +4,11 @@
 Character info<br>
 Character name: {{ character_data.character_name }}<br>
 Character year: {{ character_data.character_year }}<br>
-Character: {{character_data.characters}}
-
+<ul>
+    {% for char in character_data.characters%}
+          <li> {{character_list.char.name}} </li>
+          <img src="{{ character_list.char.image }}" alt="My image">
+    {%endfor%}
+ </ul>
 
 {% endblock content %}

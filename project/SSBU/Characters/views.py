@@ -5,9 +5,94 @@ from django.contrib import messages
 
 import datetime
 import json
-
-
-
+character_list = [{
+    'Mario': {'name': 'Mario', 'image': ''},
+    'Donkey Kong': {'name': 'Donkey Kong', 'image': ''},
+    'Link': {'name': 'Link', 'image': ''},
+    'Samus': {'name': 'Samus', 'image': ''},
+    'Dark Samus': {'name': 'Dark Samus', 'image': ''},
+    'Yoshi': {'name': 'Yoshi', 'image': ''},
+    'Kirby': {'name': 'Kirby', 'image': ''},
+    'Fox': {'name': 'Fox', 'image': ''},
+    'Pikachu': {'name': 'Pikachu', 'image': ''},
+    'Luigi': {'name': 'Luigi', 'image': ''},
+    'Ness': {'name': 'Ness', 'image': ''},
+    'Captain Falcon': {'name': 'Captain Falcon', 'image': ''},
+    'Jigglypuff': {'name': 'Jigglypuff', 'image': ''},
+    'Peach': {'name': 'Peach', 'image': ''},
+    'Daisy': {'name': 'Daisy', 'image': ''},
+    'Bowser': {'name': 'Bowser', 'image': ''},
+    'Ice Climbers': {'name': 'Ice Climbers', 'image': ''},
+    'Sheik': {'name': 'Sheik', 'image': ''},
+    'Zelda': {'name': 'Zelda', 'image': ''},
+    'Dr. Mario': {'name': 'Dr. Mario', 'image': ''},
+    'Pichu': {'name': 'Pichu', 'image': ''},
+    'Falco': {'name': 'Falco', 'image': ''},
+    'Marth': {'name': 'Marth', 'image': ''},
+    'Lucina': {'name': 'Lucina', 'image': ''},
+    'Young Link': {'name': 'Young Link', 'image': ''},
+    'Ganondorf': {'name': 'Ganondorf', 'image': ''},
+    'Mewtwo': {'name': 'Mewtwo', 'image': ''},
+    'Roy': {'name': 'Roy', 'image': ''},
+    'Chrom': {'name': 'Chrom', 'image': ''},
+    'Mr. Game & Watch': {'name': 'Mr. Game & Watch', 'image': ''},
+    'Meta Knight': {'name': 'Meta Knight', 'image': ''},
+    'Pit': {'name': 'Pit', 'image': ''},
+    'Dark Pit': {'name': 'Dark Pit', 'image': ''},
+    'Zero Suit Samus': {'name': 'Zero Suit Samus', 'image': ''},
+    'Wario': {'name': 'Wario', 'image': ''},
+    'Snake': {'name': 'Snake', 'image': ''},
+    'Ike': {'name': 'Ike', 'image': ''},
+    'Pokemon Trainer': {'name': 'Pokemon Trainer', 'image': ''},
+    'Diddy Kong': {'name': 'Diddy Kong', 'image': ''},
+    'Lucas': {'name': 'Lucas', 'image': ''},
+    'Sonic': {'name': 'Sonic', 'image': ''},
+    'King Dedede': {'name': 'King Dedede', 'image': ''},
+    'Olimar': {'name': 'Olimar', 'image': ''},
+    'Lucario': {'name': 'Lucario', 'image': ''},
+    'R.O.B.': {'name': 'R.O.B.', 'image': ''},
+    'Toon Link': {'name': 'Toon Link', 'image': ''},
+    'Wolf': {'name': 'Wolf', 'image': ''},
+    'Villager': {'name': 'Villager', 'image': ''},
+    'Mega Man': {'name': 'Mega Man', 'image': ''},
+    'Wii Fit Trainer': {'name': 'Wii Fit Trainer', 'image': ''},
+    'Rosalina & Luma': {'name': 'Rosalina & Luma', 'image': ''},
+    'Little Mac': {'name': 'Little Mac', 'image': ''},
+    'Greninja': {'name': 'Greninja', 'image': ''},
+    'Mii Brawler': {'name': 'Mii Brawler', 'image': ''},
+    'Mii Swordfighter': {'name': 'Mii Swordfighter', 'image': ''},
+    'Mii Gunner': {'name': 'Mii Gunner', 'image': ''},
+    'Palutena': {'name': 'Palutena', 'image': ''},
+    'Pac-Man': {'name': 'Pac-Man', 'image': ''},
+    'Robin': {'name': 'Robin', 'image': ''},
+    'Shulk': {'name': 'Shulk', 'image': ''},
+    'Bowser Jr.': {'name': 'Bowser Jr.', 'image': ''},
+    'Duck Hunt': {'name': 'Duck Hunt', 'image': ''},
+    'Ryu': {'name': 'Ryu', 'image': ''},
+    'Ken': {'name': 'Ken', 'image': ''},
+    'Cloud': {'name': 'Cloud', 'image': ''},
+    'Corrin': {'name': 'Corrin', 'image': ''},
+    'Bayonetta': {'name': 'Bayonetta', 'image': ''},
+    'Inkling': {'name': 'Inkling', 'image': ''},
+    'Ridley': {'name': 'Ridley', 'image': ''},
+    'Simon': {'name': 'Simon', 'image': ''},
+    'Richter': {'name': 'Richter', 'image': ''},
+    'King K. Rool': {'name': 'King K. Rool', 'image': ''},
+    'Isabelle': {'name': 'Isabelle', 'image': ''},
+    'Incineroar': {'name': 'Incineroar', 'image': ''},
+    'Piranha Plant': {'name': 'Piranha Plant', 'image': ''},
+    'Joker': {'name': 'Joker', 'image': ''},
+    'Hero': {'name': 'Hero', 'image': ''},
+    'Banjo & Kazooie': {'name': 'Banjo & Kazooie', 'image': ''},
+    'Terry': {'name': 'Terry', 'image': ''},
+    'Byleth': {'name': 'Byleth', 'image': ''},
+    'Min Min': {'name': 'Min Min', 'image': ''},
+    'Steve': {'name': 'Steve', 'image': ''},
+    'Sephiroth': {'name': 'Sephiroth', 'image': ''},
+    'Pyra/Mythra': {'name': 'Pyra/Mythra', 'image': ''},
+    'Kazuya': {'name': 'Kazuya', 'image': ''},
+    'Sora': {'name': 'Sora', 'image': ''}
+}]
 # Create your views here.
 
 def index(request):
@@ -32,6 +117,7 @@ def cookies(request):
    return response
 
 def character_info(request):
+    global character_list
     dico_cookies = request.COOKIES
     dico_context = {}
     if 'character_data' in dico_cookies:
@@ -62,12 +148,10 @@ def nondjangoforms(request):
         if form.is_valid():
         # process the data
             response = redirect('Characters:character_info')
-            print("name", form.cleaned_data['name'])
             print("characters", form.cleaned_data['Characters'])
             print("year", form.cleaned_data['year'])
             response.set_cookie(key="character_data", value=json.dumps(
-            {'character_name': request.POST['name'],
-            'characters': request.POST['Characters'],
+            {'character_name': request.POST['Characters'],
             'character_year': request.POST['year']}))
 
 
