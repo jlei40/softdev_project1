@@ -119,9 +119,9 @@ def cookies(request):
 def character_info(request):
     global character_list
     dico_cookies = request.COOKIES
-    dico_context = {}
+    dico_context = {'character_list':character_list}
     if 'character_data' in dico_cookies:
-        try:
+        try:            
             dico_character_data = json.loads(dico_cookies['character_data'])
             dico_context['character_data'] = dico_character_data
         except:
