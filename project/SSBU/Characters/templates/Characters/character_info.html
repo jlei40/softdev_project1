@@ -2,17 +2,28 @@
 
 {% block content %}
     <h1>List of Characters</h1>
-    <ul>
-        {% for character_dict in character_list %}
-            {% for character_name, character_attributes in character_dict.items %}
-                <li>
-                    <p><strong>Name:</strong> {{ character_attributes.name }}</p>
-                    <p><strong>Height:</strong> {{ character_attributes.height }}</p>
-                    <p><strong>Weight:</strong> {{ character_attributes.weight }}</p>
-                    <p><strong>Series:</strong> {{ character_attributes.series }}</p>
-                    <img src="{{ character_attributes.image }}" alt="{{ character_name }}">
-                </li>
+    <table class="character-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Height</th>
+                <th>Weight</th>
+                <th>Series</th>
+                <th>Image</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for character_dict in character_list %}
+                {% for character_name, character_attributes in character_dict.items %}
+                    <tr>
+                        <td>{{ character_attributes.name }}</td>
+                        <td>{{ character_attributes.height }}</td>
+                        <td>{{ character_attributes.weight }}</td>
+                        <td>{{ character_attributes.series }}</td>
+                        <td><img src="{{ character_attributes.image }}" alt="{{ character_name }}"></td>
+                    </tr>
+                {% endfor %}
             {% endfor %}
-        {% endfor %}
-    </ul>
+        </tbody>
+    </table>
 {% endblock content %}
