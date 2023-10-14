@@ -10,5 +10,8 @@ urlpatterns = [
    path("djangoforms", views.djangoforms, name="djangoforms"),
    path("nondjangoforms", views.nondjangoforms, name="nondjangoforms"),   
    path("character_info", views.character_info, name="character_info"),
+   path("search", views.search, name="search"),
+   path("searched",views.searched, name="searched"),
+
 ]
 

@@ -1,0 +1,25 @@
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Searched Character Information</title>
+</head>
+
+<body>
+    <h1>Character Information</h1>
+
+    {% if selected_character %}
+    <h2>Name: {{ selected_character.name }}</h2>
+    <p>Height: {{ selected_character.height }}</p>
+    <p>Weight: {{ selected_character.weight }}</p>
+    <p>Series: {{ selected_character.series }}</p>
+    <!-- Add more character attributes here as needed -->
+    <img src="{{ selected_character.image }}" alt="{{ selected_character.name }}" width="200">
+    {% else %}
+    <p>No information available for the selected character.</p>
+    {% endif %}
+    <br>
+    <a href="{% url 'Characters:search' %}">Search Again</a>
+</body>
+
+</html>
