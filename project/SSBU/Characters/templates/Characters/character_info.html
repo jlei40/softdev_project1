@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 
 {% block content %}
+{% load static %}
+
     <h1>List of Characters</h1>
     <table class="character-table">
         <thead>
@@ -20,7 +22,7 @@
                         <td>{{ character_attributes.height }}</td>
                         <td>{{ character_attributes.weight }}</td>
                         <td>{{ character_attributes.series }}</td>
-                        <td><img src="{{ character_attributes.image }}" alt="{{ character_name }}"></td>
+                        <td><img src="{% static character_attributes.image%}" alt = "my image"> </img></td>
                     </tr>
                 {% endfor %}
             {% endfor %}
