@@ -455,7 +455,7 @@ character_list = [
             'height': "5'6\" (168 cm)",
             'weight': 'Middleweight',
             'series': 'Wii Fit',
-            'image': '/images/150px-Wii_Fit_Trainer.png'
+            'image': '/images/150px-Wii_Fit_Trainer_SSBU.png'
         }
     },
     {
