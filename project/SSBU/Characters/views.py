@@ -851,7 +851,7 @@ def nondjangoforms(request):
     return render(request, "Characters/nondjangoforms.html", {'character_list': character_list})
 
 def search(request):
-    selected_character_info = None
+    selected_character_info = []
 
     if request.method == "POST":
         selected_character_name = request.POST.get('selected_character')  # Use the correct field name
@@ -859,13 +859,13 @@ def search(request):
         # Find the selected character's information from the character_list
         for character_dict in character_list:
             for character_name, character_info in character_dict.items():
-                if character_name == selected_character_name:
-                    selected_character_info = character_info
-                    break
+                if (selected_character_name.lower() in character_name.lower()):
+                    selected_character_info.append(character_info)
+                    #break
 
         # Render the searched.html template with the selected character's information
         return render(request, "Characters/searched.html", {
-            'selected_character': selected_character_info,
+            'selected_characters': selected_character_info,
         })
 
     # Render the search.html template for GET requests
