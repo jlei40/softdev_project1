@@ -1,3 +1,17 @@
+{% load static %}
+<head>
+   <link rel="stylesheet" href="{% static 'main.css' %}">
+</head>
+{% block content %}
+<div id="navigation">
+    <div id="nav_div">
+         <a href="search">Search<br></a>
+         <a href="nondjangoforms">Non-Django Form<br></a>
+         <a href="djangoforms">Django Form <br></a>
+         <a href="character_info">Character Info<br></a>
+    </div>
+ </div>
+ <br><br><br><br>
 <form action="" method="post">
     {% csrf_token %}
     <label for="Characters">Character:</label>
@@ -29,3 +43,4 @@
     <br>
     <input type="submit" value="Submit">
 </form>
+{% endblock content %}

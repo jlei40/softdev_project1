@@ -1,11 +1,21 @@
-
+{% load static %}
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Searched Character Information</title>
+    <link rel="stylesheet" href="{% static 'main.css' %}">
 </head>
 
 <body>
+    <div id="navigation">
+        <div id="nav_div">
+             <a href="search">Search<br></a>
+             <a href="nondjangoforms">Non-Django Form<br></a>
+             <a href="djangoforms">Django Form <br></a>
+             <a href="character_info">Character Info<br></a>
+        </div>
+     </div>
+     <br/><br/>
     <h1>Character Information</h1>
     
     {% if selected_characters %}

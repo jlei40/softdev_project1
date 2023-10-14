@@ -6,11 +6,20 @@
 <head>
    {% block head %}
    {% endblock head %}
-   <link rel="stylesheet" href="{% static 'css/main.css' %}">
+   <link rel="stylesheet" href="{% static 'main.css' %}">
 
 </head>
 
 <body>
+   <div id="navigation">
+      <div id="nav_div">
+           <a href="search">Search<br></a>
+           <a href="nondjangoforms">Non-Django Form<br></a>
+           <a href="djangoforms">Django Form <br></a>
+           <a href="character_info">Character Info<br></a>
+      </div>
+   </div>
+   <br>
    <div class="header_title">Characters App</div><br/><br/>
      {% if messages %}
      <div>
