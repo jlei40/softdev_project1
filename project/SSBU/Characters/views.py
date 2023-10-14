@@ -14,7 +14,7 @@ character_list = [
             'height': "5'1\" (155 cm)",
             'weight': 'Plumber-weight',
             'series': 'Super Mario',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Mario_SSBU.png'
         }
     },
     {
@@ -23,7 +23,7 @@ character_list = [
             'height': "7'0\" (213 cm)",
             'weight': 'Heavyweight',
             'series': 'Donkey Kong',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Donkey_Kong_SSBU.png'
         }
     },
     {
@@ -32,7 +32,7 @@ character_list = [
             'height': "5'7\" (170 cm)",
             'weight': 'Heroic weight',
             'series': 'The Legend of Zelda',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Link_SSBU.png'
         }
     },
     {
@@ -41,7 +41,7 @@ character_list = [
             'height': "6'3\" (190 cm)",
             'weight': 'Power Suit weight',
             'series': 'Metroid',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Samus_SSBU.png'
         }
     },
     {
@@ -50,7 +50,7 @@ character_list = [
             'height': "6'4\" (193 cm)",
             'weight': 'Phazon weight',
             'series': 'Metroid',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Dark_Samus_SSBU.jpeg'
         }
     },
     {
@@ -59,7 +59,7 @@ character_list = [
             'height': "3'7\" (109 cm)",
             'weight': 'Lightweight',
             'series': 'Super Mario',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Yoshi_SSBU.png'
         }
     },
     {
@@ -68,7 +68,7 @@ character_list = [
             'height': "8\" (20 cm)",
             'weight': 'Lightweight',
             'series': 'Kirby',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Kirby_SSBU.png'
         }
     },
     {
@@ -77,7 +77,7 @@ character_list = [
             'height': "5'8\" (173 cm)",
             'weight': 'Middleweight',
             'series': 'Star Fox',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Fox_SSBU.png'
         }
     },
     {
@@ -86,7 +86,7 @@ character_list = [
             'height': "1'4\" (40 cm)",
             'weight': 'Featherweight',
             'series': 'Pokémon',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Pikachu_SSBU.png'
         }
     },
     {
@@ -95,7 +95,7 @@ character_list = [
             'height': "5'9\" (175 cm)",
             'weight': 'Plumber-weight',
             'series': 'Super Mario',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/137px-Luigi_SSBU.png'
         }
     },
     {
@@ -104,7 +104,7 @@ character_list = [
             'height': "4'11\" (150 cm)",
             'weight': 'Kid-weight',
             'series': 'EarthBound',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Ness_SSBU.png'
         }
     },
     {
@@ -113,7 +113,7 @@ character_list = [
             'height': "6'2\" (188 cm)",
             'weight': 'Middleweight',
             'series': 'F-Zero',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Captain_Falcon_SSBU.png'
         }
     },
     {
@@ -122,7 +122,7 @@ character_list = [
             'height': "1'8\" (51 cm)",
             'weight': 'Balloon-weight',
             'series': 'Pokémon',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Jigglypuff_SSBU.png'
         }
     },
     {
@@ -131,7 +131,7 @@ character_list = [
             'height': "6'0\" (183 cm)",
             'weight': 'Lightweight',
             'series': 'Super Mario',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/133px-Peach_SSBU.png'
         }
     },
     {
@@ -140,7 +140,7 @@ character_list = [
             'height': "5'11\" (180 cm)",
             'weight': 'Lightweight',
             'series': 'Super Mario',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Princess_Daisy_SSBU.jpeg'
         }
     },
     {
@@ -149,7 +149,7 @@ character_list = [
             'height': "8'7\" (261 cm)",
             'weight': 'Super Heavyweight',
             'series': 'Super Mario',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Bowser_SSBU.png'
         }
     },
     {
@@ -158,7 +158,7 @@ character_list = [
             'height': "3'5\" (104 cm)",
             'weight': 'Middleweight',
             'series': 'Ice Climber',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Ice_Climbers_SSBU.png'
         }
     },
     {
@@ -167,7 +167,7 @@ character_list = [
             'height': "5'10\" (178 cm)",
             'weight': 'Middleweight',
             'series': 'The Legend of Zelda',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Sheik_SSBU.png'
         }
     },
     {
@@ -176,7 +176,7 @@ character_list = [
             'height': "5'7\" (170 cm)",
             'weight': 'Middleweight',
             'series': 'The Legend of Zelda',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Zelda_SSBU.png'
         }
     },
     {
@@ -185,7 +185,7 @@ character_list = [
             'height': "5'7\" (170 cm)",
             'weight': 'Middleweight',
             'series': 'Super Mario',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Dr.png'
         }
     },
     {
@@ -194,7 +194,7 @@ character_list = [
             'height': "1'0\" (30 cm)",
             'weight': 'Lightweight',
             'series': 'Pokémon',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Pichu_SSBU.png'
         }
     },
     {
@@ -203,7 +203,7 @@ character_list = [
             'height': "6'2\" (188 cm)",
             'weight': 'Featherweight',
             'series': 'Star Fox',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Falco_SSBU.png'
         }
     },
     {
@@ -212,7 +212,7 @@ character_list = [
             'height': "6'0\" (183 cm)",
             'weight': 'Middleweight',
             'series': 'Fire Emblem',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Marth_SSBU.png'
         }
     },
     {
@@ -221,7 +221,7 @@ character_list = [
             'height': "5'7\" (170 cm)",
             'weight': 'Middleweight',
             'series': 'Fire Emblem',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Lucina_SSBU.png'
         }
     },
     {
@@ -230,7 +230,7 @@ character_list = [
             'height': "5'6\" (168 cm)",
             'weight': 'Middleweight',
             'series': 'The Legend of Zelda',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Young_Link_SSBU.png'
         }
     },
     {
@@ -239,7 +239,7 @@ character_list = [
             'height': "7'6\" (229 cm)",
             'weight': 'Super Heavyweight',
             'series': 'The Legend of Zelda',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/149px-Ganondorf_SSBU.png'
         }
     },
     {
@@ -248,7 +248,7 @@ character_list = [
             'height': "6'7\" (201 cm)",
             'weight': 'Middleweight',
             'series': 'Pokémon',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/149px-Mewtwo_SSBU.png'
         }
     },
     {
@@ -257,7 +257,7 @@ character_list = [
             'height': "5'8\" (173 cm)",
             'weight': 'Middleweight',
             'series': 'Fire Emblem',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Roy_SSBU.png'
         }
     },
     {
@@ -266,7 +266,7 @@ character_list = [
             'height': "6'0\" (183 cm)",
             'weight': 'Middleweight',
             'series': 'Fire Emblem',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Chrom_SSBU.jpeg'
         }
     },
     {
@@ -275,7 +275,7 @@ character_list = [
             'height': "2D (Variable height)",
             'weight': 'Variable weight',
             'series': 'Game & Watch',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Mr.png'
         }
     },
     {
@@ -284,7 +284,7 @@ character_list = [
             'height': "6'5\" (196 cm)",
             'weight': 'Middleweight',
             'series': 'Kirby',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Kirby_SSBU.png'
         }
     },
     {
@@ -293,7 +293,7 @@ character_list = [
             'height': "5'2\" (157 cm)",
             'weight': 'Middleweight',
             'series': 'Kid Icarus',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Pit_SSBU.png'
         }
     },
     {
@@ -302,7 +302,7 @@ character_list = [
             'height': "6'0\" (183 cm)",
             'weight': 'Middleweight',
             'series': 'Kid Icarus',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/142px-Dark_Pit_SSBU.png'
         }
     },
     {
@@ -311,7 +311,7 @@ character_list = [
             'height': "5'9\" (175 cm)",
             'weight': 'Middleweight',
             'series': 'Metroid',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Zero_Suit_Samus_SSBU.png'
         }
     },
     {
@@ -320,7 +320,7 @@ character_list = [
             'height': "5'7\" (170 cm)",
             'weight': 'Middleweight',
             'series': 'Super Mario',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Wario_SSBU.png'
         }
     },
     {
@@ -329,7 +329,7 @@ character_list = [
             'height': "6'0\" (183 cm)",
             'weight': 'Middleweight',
             'series': 'Metal Gear',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': 'images/123px-Snake_SSBU.png'
         }
     },
     {
@@ -338,7 +338,7 @@ character_list = [
             'height': "6'4\" (193 cm)",
             'weight': 'Heavyweight',
             'series': 'Fire Emblem',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Ike_SSBU.png'
         }
     },
     {
@@ -347,7 +347,7 @@ character_list = [
             'height': "5'3\" (160 cm) (Average of the three Pokémon)",
             'weight': 'Variable weight (Depends on the active Pokémon)',
             'series': 'Pokémon',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Charizard_SSBU.png'
         }
     },
     {
@@ -356,7 +356,7 @@ character_list = [
             'height': "3'0\" (91 cm)",
             'weight': 'Featherweight',
             'series': 'Donkey Kong',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/145px-Diddy_Kong_SSBU.png'
         }
     },
     {
@@ -365,7 +365,7 @@ character_list = [
             'height': "4'3\" (130 cm)",
             'weight': 'Kid-weight',
             'series': 'EarthBound',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Lucas_SSBU.png'
         }
     },
     {
@@ -374,7 +374,7 @@ character_list = [
             'height': "3'3\" (100 cm)",
             'weight': 'Middleweight',
             'series': 'Sonic the Hedgehog',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Sonic_SSBU.png'
         }
     },
     {
@@ -383,7 +383,7 @@ character_list = [
             'height': "7'3\" (221 cm)",
             'weight': 'Super Heavyweight',
             'series': 'Kirby',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-King_Dedede_SSBU.png'
         }
     },
     {
@@ -392,7 +392,7 @@ character_list = [
             'height': "1'1\" (33 cm)",
             'weight': 'Featherweight',
             'series': 'Pikmin',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Olimar_SSBU.png'
         }
     },
     {
@@ -401,7 +401,7 @@ character_list = [
             'height': "3'11\" (119 cm)",
             'weight': 'Middleweight',
             'series': 'Pokémon',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Lucario_SSBU.png'
         }
     },
     {
@@ -410,7 +410,7 @@ character_list = [
             'height': "2'11\" (89 cm)",
             'weight': 'Heavyweight',
             'series': 'R.O.B.',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-R.png'
         }
     },
     {
@@ -419,7 +419,7 @@ character_list = [
             'height': "3'5\" (104 cm)",
             'weight': 'Middleweight',
             'series': 'The Legend of Zelda',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/142px-Toon_Link_SSBU.png'
         }
     },
     {
@@ -428,7 +428,7 @@ character_list = [
             'height': "6'4\" (193 cm)",
             'weight': 'Middleweight',
             'series': 'Star Fox',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Wolf_SSBU.png'
         }
     },
     {
@@ -437,7 +437,7 @@ character_list = [
             'height': "3'3\" (100 cm)",
             'weight': 'Featherweight',
             'series': 'Animal Crossing',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Villager_SSBU.png'
         }
     },
     {
@@ -446,7 +446,7 @@ character_list = [
             'height': "4'11\" (150 cm)",
             'weight': 'Middleweight',
             'series': 'Mega Man',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Mega_Man_SSBU.png'
         }
     },
     {
@@ -455,7 +455,7 @@ character_list = [
             'height': "5'6\" (168 cm)",
             'weight': 'Middleweight',
             'series': 'Wii Fit',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Wii_Fit_Trainer.png'
         }
     },
     {
@@ -464,7 +464,7 @@ character_list = [
             'height': "7'3\" (221 cm)",
             'weight': 'Middleweight',
             'series': 'Super Mario',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Rosalina_&_Luma_SSBU.png'
         }
     },
     {
@@ -473,7 +473,7 @@ character_list = [
             'height': "4'8\" (142 cm)",
             'weight': 'Featherweight',
             'series': 'Punch-Out!!',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Little_Mac_SSBU.png'
         }
     },
     {
@@ -482,7 +482,7 @@ character_list = [
             'height': "4'11\" (150 cm)",
             'weight': 'Middleweight',
             'series': 'Pokémon',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Greninja_SSBU.png'
         }
     },
     {
@@ -491,7 +491,7 @@ character_list = [
             'height': "6'7\" (201 cm)",
             'weight': 'Middleweight',
             'series': 'Kid Icarus',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/142px-Palutena_SSBU.png'
         }
     },
     {
@@ -500,7 +500,7 @@ character_list = [
             'height': "4'0\" (122 cm)",
             'weight': 'Middleweight',
             'series': 'Pac-Man',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Pac-Man_SSBU.png'
         }
     },
     {
@@ -509,7 +509,7 @@ character_list = [
             'height': "5'7\" (170 cm)",
             'weight': 'Middleweight',
             'series': 'Fire Emblem',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Robin_SSBU.png'
         }
     },
     {
@@ -518,7 +518,7 @@ character_list = [
             'height': "5'11\" (180 cm)",
             'weight': 'Middleweight',
             'series': 'Xenoblade Chronicles',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Shulk_SSBU.png'
         }
     },
     {
@@ -527,7 +527,7 @@ character_list = [
             'height': "4'0\" (122 cm)",
             'weight': 'Middleweight',
             'series': 'Super Mario',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Bowser_jr.png'
         }
     },
     {
@@ -536,7 +536,7 @@ character_list = [
             'height': "1'2\" (36 cm)",
             'weight': 'Featherweight',
             'series': 'Duck Hunt',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Duck_Hunt_SSBU.png'
         }
     },
     {
@@ -545,7 +545,7 @@ character_list = [
             'height': "5'9\" (175 cm)",
             'weight': 'Middleweight',
             'series': 'Street Fighter',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Ryu_SSBU.png'
         }
     },
     {
@@ -554,7 +554,7 @@ character_list = [
             'height': "5'9\" (175 cm)",
             'weight': 'Middleweight',
             'series': 'Street Fighter',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Ken_SSBU.jpeg'
         }
     },
     {
@@ -563,7 +563,7 @@ character_list = [
             'height': "5'7\" (170 cm)",
             'weight': 'Middleweight',
             'series': 'Final Fantasy',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Cloud_SSBU.png'
         }
     },
     {
@@ -572,7 +572,7 @@ character_list = [
             'height': "5'7\" (170 cm)",
             'weight': 'Middleweight',
             'series': 'Fire Emblem',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Corrin_SSBU.png'
         }
     },
     {
@@ -581,7 +581,7 @@ character_list = [
             'height': "Unknown",
             'weight': 'Unknown',
             'series': 'Bayonetta',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Bayonetta_SSBU.png'
         }
     },
     {
@@ -590,7 +590,7 @@ character_list = [
             'height': "3'7\" (109 cm)",
             'weight': 'Featherweight',
             'series': 'Splatoon',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Inkling_SSBU.jpeg'
         }
     },
     {
@@ -599,7 +599,7 @@ character_list = [
             'height': "25'0\" (762 cm) (Approximate)",
             'weight': 'Super Heavyweight',
             'series': 'Metroid',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Ridley_SSBU.jpeg'
         }
     },
     {
@@ -608,7 +608,7 @@ character_list = [
             'height': "6'0\" (183 cm)",
             'weight': 'Middleweight',
             'series': 'Castlevania',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Simon_SSBU.jpeg'
         }
     },
     {
@@ -617,7 +617,7 @@ character_list = [
             'height': "6'0\" (183 cm)",
             'weight': 'Middleweight',
             'series': 'Castlevania',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Richter_SSBU.jpeg'
         }
     },
     {
@@ -626,7 +626,7 @@ character_list = [
             'height': "21'0\" (640 cm) (Approximate)",
             'weight': 'Super Heavyweight',
             'series': 'Donkey Kong',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-King_K_Rool_SSBU.jpeg'
         }
     },
     {
@@ -635,7 +635,7 @@ character_list = [
             'height': "1'4\" (41 cm)",
             'weight': 'Lightweight',
             'series': 'Animal Crossing',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Isabelle_SSBU.jpeg'
         }
     },
     {
@@ -644,7 +644,7 @@ character_list = [
             'height': "5'11\" (180 cm) (Approximate)",
             'weight': 'Heavyweight',
             'series': 'Pokémon',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Incineroar_SSBU.jpeg'
         }
     },
     {
@@ -653,7 +653,7 @@ character_list = [
             'height': "Variable",
             'weight': 'Variable',
             'series': 'Super Mario',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Piranha_Plant_SSBU.jpeg'
         }
     },
     {
@@ -662,7 +662,7 @@ character_list = [
             'height': "Unknown",
             'weight': 'Unknown',
             'series': 'Persona',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Joker_SSBU.jpeg'
         }
     },
     {
@@ -671,7 +671,7 @@ character_list = [
             'height': "Unknown",
             'weight': 'Unknown',
             'series': 'Dragon Quest',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Hero_SSBU.jpeg'
         }
     },
     {
@@ -680,7 +680,7 @@ character_list = [
             'height': "Unknown",
             'weight': 'Unknown',
             'series': 'Banjo-Kazooie',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Banjo_&_Kazooie_SSBU.jpeg'
         }
     },
     {
@@ -689,7 +689,7 @@ character_list = [
             'height': "Unknown",
             'weight': 'Unknown',
             'series': 'Fatal Fury',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Terry_SSBU.jpeg'
         }
     },
     {
@@ -698,7 +698,7 @@ character_list = [
             'height': "Unknown",
             'weight': 'Unknown',
             'series': 'Fire Emblem',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Byleth_SSBU.jpeg'
         }
     },
     {
@@ -707,7 +707,7 @@ character_list = [
             'height': "Unknown",
             'weight': 'Unknown',
             'series': 'ARMS',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Min_Min_SSBU.jpeg'
         }
     },
     {
@@ -716,7 +716,7 @@ character_list = [
             'height': "Unknown",
             'weight': 'Unknown',
             'series': 'Minecraft',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Steve_SSBU.jpeg'
         }
     },
     {
@@ -725,7 +725,7 @@ character_list = [
             'height': "Unknown",
             'weight': 'Unknown',
             'series': 'Final Fantasy',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Sephiroth_SSBU.jpeg'
         }
     },
     {
@@ -734,7 +734,7 @@ character_list = [
             'height': "Unknown",
             'weight': 'Unknown',
             'series': 'Xenoblade Chronicles',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Pyra_Mythra_SSBU.jpeg'
         }
     },
     {
@@ -743,7 +743,7 @@ character_list = [
             'height': "Unknown",
             'weight': 'Unknown',
             'series': 'Tekken',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Kazuya_SSBU.jpeg'
         }
     },
     {
@@ -752,7 +752,7 @@ character_list = [
             'height': "Unknown",
             'weight': 'Unknown',
             'series': 'Kingdom Hearts',
-            'image': 'INSERT IMAGE LINK HERE'
+            'image': '/images/150px-Sora_SSBU.jpeg'
         }
     }
 ]
@@ -851,7 +851,7 @@ def nondjangoforms(request):
     return render(request, "Characters/nondjangoforms.html", {'character_list': character_list})
 
 def search(request):
-    selected_character_info = []
+    selected_character_info = None
 
     if request.method == "POST":
         selected_character_name = request.POST.get('selected_character')  # Use the correct field name
@@ -859,13 +859,13 @@ def search(request):
         # Find the selected character's information from the character_list
         for character_dict in character_list:
             for character_name, character_info in character_dict.items():
-                if (selected_character_name.lower() in character_name.lower()):
-                    selected_character_info.append(character_info)
-                    #break
+                if character_name == selected_character_name:
+                    selected_character_info = character_info
+                    break
 
         # Render the searched.html template with the selected character's information
         return render(request, "Characters/searched.html", {
-            'selected_characters': selected_character_info,
+            'selected_character': selected_character_info,
         })
 
     # Render the search.html template for GET requests
