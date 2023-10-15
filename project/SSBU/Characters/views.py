@@ -783,17 +783,25 @@ def cookies(request):
        visit_nbr = 1
    response = render(request, "Characters/cookies.html",
                      context={'visit_nbr': visit_nbr})
-   response.set_cookie(key="visit_nbr", value=visit_nbr,expires=datetime.datetime(2024, 10, 2, 18, 23))
+   response.set_cookie(key="visit_nbr", value=visit_nbr)
    return response
 
 def character_info(request):
     if request.method == 'POST':
         item_to_delete = request.POST.get('item_to_delete')
+        data = request.POST.get('data')
+        
         if item_to_delete and len(character_list) > 1:
             for character_dict in character_list:
                 if item_to_delete in character_dict:
                     character_list.remove(character_dict)
                     break
+        if data:
+            for character_dict in character_list:
+                if data in character_dict:
+                    selected_character = character_dict[data]
+                    return render(request, "Characters/nondjangoforms.html", context={'character_list': character_list, 'initial_data': selected_character})
+                
     return render(request, "Characters/character_info.html", context={'character_list': character_list})
 
 def djangoforms(request):

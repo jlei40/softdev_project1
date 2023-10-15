@@ -5,14 +5,14 @@
 {% block content %}
 <div id="navigation">
     <div id="nav_div">
-         <a href="search">Search<br></a>
-         <a href="nondjangoforms">Non-Django Form<br></a>
-         <a href="djangoforms">Django Form <br></a>
-         <a href="character_info">Character Info<br></a>
+        <a href="search" class="{% if request.resolver_match.url_name == 'search' %}active{% endif %}">Search<br></a>
+        <a href="nondjangoforms" class="{% if request.resolver_match.url_name == 'nondjangoforms' %}active{% endif %}">Non-Django Form<br></a>
+        <a href="djangoforms" class="{% if request.resolver_match.url_name == 'djangoforms' %}active{% endif %}">Django Form <br></a>
+        <a href="character_info" class="{% if request.resolver_match.url_name == 'character_info' %}active{% endif %}">Character Info<br></a>
     </div>
  </div>
  <br><br><br><br>
-<form action="" method="post">
+<form action="{% url 'Characters:nondjangoforms' %}" method="post">
     {% csrf_token %}
     <label for="action">Action:</label>
     <select name="action" required>
@@ -24,22 +24,22 @@
     <select name="Characters" required>
         {% for character_dict in character_list %}
             {% for character_name, character_data in character_dict.items %}
-                <option value="{{ character_name }}">{{ character_name }}</option>
+                <option value="{{ character_name }}"{% if character_name == initial_data.name %}selected{% endif %}>{{ character_name }}</option>
             {% endfor %}
         {% endfor %}
     </select>
     <br>
     <label for="name">Name:</label>
-    <input type="text" name="name" required>
+    <input type="text" name="name" value="{{initial_data.name}}"required>
     <br>
     <label for="height">Height:</label>
-    <input type="text" name="height" required>
+    <input type="text" name="height" value="{{ initial_data.height }}"required>
     <br>
     <label for="weight">Weight:</label>
-    <input type="text" name="weight" required>
+    <input type="text" name="weight" value="{{ initial_data.weight }}"required>
     <br>
     <label for="series">Series:</label>
-    <input type="text" name="series" required>
+    <input type="text" name="series" value="{{ initial_data.series }}"required>
     <br>
     <input type="submit" value="Submit">
 </form>
