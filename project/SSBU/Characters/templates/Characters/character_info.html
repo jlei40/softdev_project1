@@ -7,6 +7,30 @@
 <table class="character-table">
     <thead>
         <tr>
+            <th>Creade - Django</th>
+            <th>Create - Non-django</th>
+        </tr>
+    </thead>
+    <tbody>
+        <td>
+            <form action="{% url 'Characters:character_info' %}" method="post">
+                {% csrf_token %}
+                <input type="hidden" name="i1" value=True>
+                <button type="submit">Create</button>
+            </form>
+        </td>
+        <td>
+            <form action="{% url 'Characters:character_info' %}" method="post">
+                {% csrf_token %}
+                <input type="hidden" name="i2" value=True>
+                <button type="submit">Create</button>
+            </form>
+        </td>
+    </tbody>
+</table>
+<table class="character-table">
+    <thead>
+        <tr>
             <th>Name</th>
             <th>Height</th>
             <th>Weight</th>

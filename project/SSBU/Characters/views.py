@@ -790,6 +790,13 @@ def character_info(request):
     if request.method == 'POST':
         item_to_delete = request.POST.get('item_to_delete')
         data = request.POST.get('data')
+        i1 = request.POST.get('i1')
+        i2 = request.POST.get('i2')
+        
+        if i1:
+            return render(request, "Characters/djangoforms.html", context={'character_list': character_list})
+        if i2:
+            return render(request, "Characters/nondjangoforms.html", context={'character_list': character_list})
         
         if item_to_delete and len(character_list) > 1:
             for character_dict in character_list:
