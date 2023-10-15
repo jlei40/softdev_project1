@@ -1,12 +1,12 @@
 {% extends "base.html" %}
 
 {% block content %}
-   <form action="" method="post">
+   <form action="{% url 'Characters:djangoforms' %}" method="post">
        {% csrf_token %}
        <label for="action">Action: </label>
        <select name="action" required>
            <option value="edit">Edit</option>
-           <option value="create">Create</option>
+           <option value="create"{% if select %}selected{% endif %}>Create</option>
        </select>
        <br>
        {{ character_form.Characters.label_tag }}

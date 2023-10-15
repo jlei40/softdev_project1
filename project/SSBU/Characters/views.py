@@ -794,9 +794,12 @@ def character_info(request):
         i2 = request.POST.get('i2')
         
         if i1:
-            return render(request, "Characters/djangoforms.html", context={'character_list': character_list})
+            form = CharacterForm(request.POST)
+            request.resolver_match.url_name = 'djangoforms'
+            return render(request, "Characters/djangoforms.html", context={'character_list': character_list, 'character_form': form, 'select': i1})
         if i2:
-            return render(request, "Characters/nondjangoforms.html", context={'character_list': character_list})
+            request.resolver_match.url_name = 'nondjangoforms'
+            return render(request, "Characters/nondjangoforms.html", context={'character_list': character_list, 'select': i2})
         
         if item_to_delete and len(character_list) > 1:
             for character_dict in character_list:
@@ -807,6 +810,7 @@ def character_info(request):
             for character_dict in character_list:
                 if data in character_dict:
                     selected_character = character_dict[data]
+                    request.resolver_match.url_name = 'nondjangoforms'
                     return render(request, "Characters/nondjangoforms.html", context={'character_list': character_list, 'initial_data': selected_character})
                 
     return render(request, "Characters/character_info.html", context={'character_list': character_list})
