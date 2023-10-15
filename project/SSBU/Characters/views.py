@@ -787,7 +787,14 @@ def cookies(request):
    return response
 
 def character_info(request):
-    return render(request, "Characters/character_info.html", {'character_list': character_list})
+    if request.method == 'POST':
+        item_to_delete = request.POST.get('item_to_delete')
+        if item_to_delete and len(character_list) > 1:
+            for character_dict in character_list:
+                if item_to_delete in character_dict:
+                    character_list.remove(character_dict)
+                    break
+    return render(request, "Characters/character_info.html", context={'character_list': character_list})
 
 def djangoforms(request):
     if request.method == "POST":
@@ -808,12 +815,17 @@ def djangoforms(request):
                         character[selected_character]['weight'] = form.cleaned_data['weight']
                         character[selected_character]['series'] = form.cleaned_data['series']
 
-            elif action == 'delete':
+            elif action == 'create':
                 # Deleting the character data
-                for i, character in enumerate(character_list):
+                for character in character_list:
                     if selected_character in character.keys():
-                        del character_list[i]
-                        break
+                        character_list.append({character_name:
+                                            {'name':character_name,
+                                            'height':request.POST.get('height'), 
+                                            'weight':request.POST.get('weight'), 
+                                            'series':request.POST.get('series'),
+                                            'image':character[selected_character]['image'],}
+                                            })
 
             # Redirect to the character_info view after successful form submission
             return redirect('Characters:character_info')
@@ -837,21 +849,26 @@ def nondjangoforms(request):
                     character[selected_character]['height'] = request.POST.get('height')
                     character[selected_character]['weight'] = request.POST.get('weight')
                     character[selected_character]['series'] = request.POST.get('series')
-        elif action == 'delete':
+        elif action == 'create':
             # Deleting the character data
-            for i, character in enumerate(character_list):
+            for character in character_list:
                 if selected_character in character.keys():
-                    del character_list[i]
-                    break
+                    character_list.append({character_name:
+                                        {'name':character_name,
+                                        'height':request.POST.get('height'), 
+                                        'weight':request.POST.get('weight'), 
+                                        'series':request.POST.get('series'),
+                                        'image':character[selected_character]['image'],}
+                                        })
 
         # Redirect to the character_info view after successful form submission
         return redirect('Characters:character_info')
 
     # Render the form template for GET requests
-    return render(request, "Characters/nondjangoforms.html", {'character_list': character_list})
+    return render(request, "Characters/nondjangoforms.html", context={'character_list': character_list})
 
 def search(request):
-    selected_character_info = None
+    selected_character_info = []
 
     if request.method == "POST":
         selected_character_name = request.POST.get('selected_character')  # Use the correct field name
@@ -859,13 +876,12 @@ def search(request):
         # Find the selected character's information from the character_list
         for character_dict in character_list:
             for character_name, character_info in character_dict.items():
-                if character_name == selected_character_name:
-                    selected_character_info = character_info
-                    break
+                if (selected_character_name.lower() in character_name.lower()):
+                    selected_character_info.append(character_info)
 
         # Render the searched.html template with the selected character's information
         return render(request, "Characters/searched.html", {
-            'selected_character': selected_character_info,
+            'selected_characters': selected_character_info,
         })
 
     # Render the search.html template for GET requests

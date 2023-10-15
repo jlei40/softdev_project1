@@ -13,6 +13,7 @@
             <th>Series</th>
             <th>Image</th>
             <th>Download</th> <!-- Add a new column for the download button -->
+            <th>Delete</th>
         </tr>
     </thead>
     <tbody>
@@ -28,6 +29,13 @@
                         <a href="{% static character_attributes.image %}" download>
                             <button>Download</button>
                         </a>
+                    </td>
+                    <td>
+                        <form action="{% url 'Characters:character_info' %}" method="post">
+                            {% csrf_token %}
+                            <input type="hidden" name="item_to_delete" value="{{ character_name }}">
+                            <button type="submit">Delete</button>
+                        </form>
                     </td>
                 </tr>
             {% endfor %}

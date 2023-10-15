@@ -88,7 +88,7 @@ Characters = [
 ]
 
 class CharacterForm(forms.Form):
-    ACTION_CHOICES = [('edit', 'Edit'), ('delete', 'Delete')]
+    ACTION_CHOICES = [('edit', 'Edit'), ('create', 'Create')]
 
     action = forms.ChoiceField(choices=ACTION_CHOICES, required=True)
     name = forms.CharField(max_length=100, required=True)

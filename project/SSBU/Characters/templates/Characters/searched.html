@@ -19,13 +19,15 @@
      </div>
      <br>
 
-    {% if selected_character %}
+    {% if selected_characters %}
+    {%for selected_character in selected_characters%}
     <h2>Name: {{ selected_character.name }}</h2>
     <p>Height: {{ selected_character.height }}</p>
     <p>Weight: {{ selected_character.weight }}</p>
     <p>Series: {{ selected_character.series }}</p>
     <!-- Add more character attributes here as needed -->
     <img src="{% static selected_character.image%}" alt = "my image"> </img>
+    {%endfor%}
     {% else %}
     <p>No information available for the selected character.</p>
     {% endif %}

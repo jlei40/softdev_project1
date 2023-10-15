@@ -12,6 +12,5 @@ urlpatterns = [
    path("character_info", views.character_info, name="character_info"),
    path("search", views.search, name="search"),
    path("searched",views.searched, name="searched"),
-
 ]
 

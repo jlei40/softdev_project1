@@ -14,7 +14,13 @@
  <br><br><br><br>
 <form action="" method="post">
     {% csrf_token %}
-    <label for="Characters">Character:</label>
+    <label for="action">Action:</label>
+    <select name="action" required>
+        <option value="edit">Edit</option>
+        <option value="create">Create</option>
+    </select>
+    <br>
+    <label for="Characters">Characters:</label>
     <select name="Characters" required>
         {% for character_dict in character_list %}
             {% for character_name, character_data in character_dict.items %}
@@ -23,23 +29,17 @@
         {% endfor %}
     </select>
     <br>
-    <label for="action">Action:</label>
-    <select name="action" required>
-        <option value="edit">Edit</option>
-        <option value="delete">Delete</option>
-    </select>
-    <br>
     <label for="name">Name:</label>
     <input type="text" name="name" required>
     <br>
     <label for="height">Height:</label>
-    <input type="text" name="height">
+    <input type="text" name="height" required>
     <br>
     <label for="weight">Weight:</label>
-    <input type="text" name="weight">
+    <input type="text" name="weight" required>
     <br>
     <label for="series">Series:</label>
-    <input type="text" name="series">
+    <input type="text" name="series" required>
     <br>
     <input type="submit" value="Submit">
 </form>

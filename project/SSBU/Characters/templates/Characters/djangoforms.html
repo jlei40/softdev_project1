@@ -3,10 +3,10 @@
 {% block content %}
    <form action="" method="post">
        {% csrf_token %}
-       <label for="action">Action:</label>
+       <label for="action">Action: </label>
        <select name="action" required>
            <option value="edit">Edit</option>
-           <option value="delete">Delete</option>
+           <option value="create">Create</option>
        </select>
        <br>
        {{ character_form.Characters.label_tag }}
