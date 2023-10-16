@@ -795,6 +795,11 @@ def character_info(request):
         
         if i1:
             form = CharacterForm(request.POST)
+            character_choices = []
+            for character_dict in character_list:
+                character_name = list(character_dict.keys())[0]
+                character_choices.append((character_name, character_name))
+            form.fields['Characters'].choices = character_choices
             request.resolver_match.url_name = 'djangoforms'
             return render(request, "Characters/djangoforms.html", context={'character_list': character_list, 'character_form': form, 'select': i1})
         if i2:
@@ -818,6 +823,11 @@ def character_info(request):
 def djangoforms(request):
     if request.method == "POST":
         form = CharacterForm(request.POST)
+        character_choices = []
+        for character_dict in character_list:
+            character_name = list(character_dict.keys())[0]
+            character_choices.append((character_name, character_name))
+        form.fields['Characters'].choices = character_choices
         if form.is_valid():
             character_name = form.cleaned_data['name']
             selected_character = form.cleaned_data['Characters']
@@ -851,6 +861,11 @@ def djangoforms(request):
 
     else:
         form = CharacterForm()
+        character_choices = []
+        for character_dict in character_list:
+            character_name = list(character_dict.keys())[0]
+            character_choices.append((character_name, character_name))
+        form.fields['Characters'].choices = character_choices
 
     return render(request, "Characters/djangoforms.html", {'character_form': form})
 
