@@ -835,6 +835,9 @@ def djangoforms(request):
             # Check if 'action' exists in the form data
             action = form.cleaned_data['action']
 
+            if action == 'create' and any(character_name in character.keys() for character in character_list):
+                messages.error(request, "A character with this name already exists. Please choose a different name.")
+                return render(request, "Characters/djangoforms.html", {'character_form': form})
             if action == 'edit':
                 # Editing the character data
                 for character in character_list:
@@ -874,7 +877,9 @@ def nondjangoforms(request):
         character_name = request.POST.get('name')
         selected_character = request.POST.get('Characters')
         action = request.POST.get('action')
-
+        if action == 'create' and any(character_name in character.keys() for character in character_list):
+            messages.error(request, "A character with this name already exists. Please choose a different name.")
+            return render(request, "Characters/nondjangoforms.html", context={'character_list': character_list})
         if action == 'edit':
             # Editing the character data
             for character in character_list:
